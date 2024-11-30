@@ -1,4 +1,4 @@
-# Install script for directory: /home/henzel/Documents/textDocs/C/stdlibImpl
+# Install script for directory: /home/henzel/Documents/textDocs/C/string_h_implementation
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/henzel/Documents/textDocs/C/stdlibImpl/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/henzel/Documents/textDocs/C/string_h_implementation/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/henzel/Documents/textDocs/C/stdlibImpl
+CMAKE_SOURCE_DIR = /home/henzel/Documents/textDocs/C/string_h_implementation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/henzel/Documents/textDocs/C/stdlibImpl/build
+CMAKE_BINARY_DIR = /home/henzel/Documents/textDocs/C/string_h_implementation/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/start.dir/depend.make
@@ -69,31 +69,47 @@ include CMakeFiles/start.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/start.dir/flags.make
 
-CMakeFiles/start.dir/strcpy.c.o: CMakeFiles/start.dir/flags.make
-CMakeFiles/start.dir/strcpy.c.o: /home/henzel/Documents/textDocs/C/stdlibImpl/strcpy.c
-CMakeFiles/start.dir/strcpy.c.o: CMakeFiles/start.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/henzel/Documents/textDocs/C/stdlibImpl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/start.dir/strcpy.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/start.dir/strcpy.c.o -MF CMakeFiles/start.dir/strcpy.c.o.d -o CMakeFiles/start.dir/strcpy.c.o -c /home/henzel/Documents/textDocs/C/stdlibImpl/strcpy.c
+CMakeFiles/start.dir/main.c.o: CMakeFiles/start.dir/flags.make
+CMakeFiles/start.dir/main.c.o: /home/henzel/Documents/textDocs/C/string_h_implementation/main.c
+CMakeFiles/start.dir/main.c.o: CMakeFiles/start.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/henzel/Documents/textDocs/C/string_h_implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/start.dir/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/start.dir/main.c.o -MF CMakeFiles/start.dir/main.c.o.d -o CMakeFiles/start.dir/main.c.o -c /home/henzel/Documents/textDocs/C/string_h_implementation/main.c
 
-CMakeFiles/start.dir/strcpy.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/start.dir/strcpy.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/henzel/Documents/textDocs/C/stdlibImpl/strcpy.c > CMakeFiles/start.dir/strcpy.c.i
+CMakeFiles/start.dir/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/start.dir/main.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/henzel/Documents/textDocs/C/string_h_implementation/main.c > CMakeFiles/start.dir/main.c.i
 
-CMakeFiles/start.dir/strcpy.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/start.dir/strcpy.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/henzel/Documents/textDocs/C/stdlibImpl/strcpy.c -o CMakeFiles/start.dir/strcpy.c.s
+CMakeFiles/start.dir/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/start.dir/main.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/henzel/Documents/textDocs/C/string_h_implementation/main.c -o CMakeFiles/start.dir/main.c.s
+
+CMakeFiles/start.dir/ft_strncpy.c.o: CMakeFiles/start.dir/flags.make
+CMakeFiles/start.dir/ft_strncpy.c.o: /home/henzel/Documents/textDocs/C/string_h_implementation/ft_strncpy.c
+CMakeFiles/start.dir/ft_strncpy.c.o: CMakeFiles/start.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/henzel/Documents/textDocs/C/string_h_implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/start.dir/ft_strncpy.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/start.dir/ft_strncpy.c.o -MF CMakeFiles/start.dir/ft_strncpy.c.o.d -o CMakeFiles/start.dir/ft_strncpy.c.o -c /home/henzel/Documents/textDocs/C/string_h_implementation/ft_strncpy.c
+
+CMakeFiles/start.dir/ft_strncpy.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/start.dir/ft_strncpy.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/henzel/Documents/textDocs/C/string_h_implementation/ft_strncpy.c > CMakeFiles/start.dir/ft_strncpy.c.i
+
+CMakeFiles/start.dir/ft_strncpy.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/start.dir/ft_strncpy.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/henzel/Documents/textDocs/C/string_h_implementation/ft_strncpy.c -o CMakeFiles/start.dir/ft_strncpy.c.s
 
 # Object files for target start
 start_OBJECTS = \
-"CMakeFiles/start.dir/strcpy.c.o"
+"CMakeFiles/start.dir/main.c.o" \
+"CMakeFiles/start.dir/ft_strncpy.c.o"
 
 # External object files for target start
 start_EXTERNAL_OBJECTS =
 
-start: CMakeFiles/start.dir/strcpy.c.o
+start: CMakeFiles/start.dir/main.c.o
+start: CMakeFiles/start.dir/ft_strncpy.c.o
 start: CMakeFiles/start.dir/build.make
 start: CMakeFiles/start.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/henzel/Documents/textDocs/C/stdlibImpl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable start"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/henzel/Documents/textDocs/C/string_h_implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable start"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/start.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -105,6 +121,6 @@ CMakeFiles/start.dir/clean:
 .PHONY : CMakeFiles/start.dir/clean
 
 CMakeFiles/start.dir/depend:
-	cd /home/henzel/Documents/textDocs/C/stdlibImpl/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/henzel/Documents/textDocs/C/stdlibImpl /home/henzel/Documents/textDocs/C/stdlibImpl /home/henzel/Documents/textDocs/C/stdlibImpl/build /home/henzel/Documents/textDocs/C/stdlibImpl/build /home/henzel/Documents/textDocs/C/stdlibImpl/build/CMakeFiles/start.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/henzel/Documents/textDocs/C/string_h_implementation/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/henzel/Documents/textDocs/C/string_h_implementation /home/henzel/Documents/textDocs/C/string_h_implementation /home/henzel/Documents/textDocs/C/string_h_implementation/build /home/henzel/Documents/textDocs/C/string_h_implementation/build /home/henzel/Documents/textDocs/C/string_h_implementation/build/CMakeFiles/start.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/start.dir/depend
 

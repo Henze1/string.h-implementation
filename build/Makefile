@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/henzel/Documents/textDocs/C/stdlibImpl
+CMAKE_SOURCE_DIR = /home/henzel/Documents/textDocs/C/string_h_implementation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/henzel/Documents/textDocs/C/stdlibImpl/build
+CMAKE_BINARY_DIR = /home/henzel/Documents/textDocs/C/string_h_implementation/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/henzel/Documents/textDocs/C/stdlibImpl/build/CMakeFiles /home/henzel/Documents/textDocs/C/stdlibImpl/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/henzel/Documents/textDocs/C/string_h_implementation/build/CMakeFiles /home/henzel/Documents/textDocs/C/string_h_implementation/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/henzel/Documents/textDocs/C/stdlibImpl/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/henzel/Documents/textDocs/C/string_h_implementation/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,29 +129,53 @@ start/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/start.dir/build.make CMakeFiles/start.dir/build
 .PHONY : start/fast
 
-strcpy.o: strcpy.c.o
-.PHONY : strcpy.o
+ft_strncpy.o: ft_strncpy.c.o
+.PHONY : ft_strncpy.o
 
 # target to build an object file
-strcpy.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/start.dir/build.make CMakeFiles/start.dir/strcpy.c.o
-.PHONY : strcpy.c.o
+ft_strncpy.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/start.dir/build.make CMakeFiles/start.dir/ft_strncpy.c.o
+.PHONY : ft_strncpy.c.o
 
-strcpy.i: strcpy.c.i
-.PHONY : strcpy.i
+ft_strncpy.i: ft_strncpy.c.i
+.PHONY : ft_strncpy.i
 
 # target to preprocess a source file
-strcpy.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/start.dir/build.make CMakeFiles/start.dir/strcpy.c.i
-.PHONY : strcpy.c.i
+ft_strncpy.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/start.dir/build.make CMakeFiles/start.dir/ft_strncpy.c.i
+.PHONY : ft_strncpy.c.i
 
-strcpy.s: strcpy.c.s
-.PHONY : strcpy.s
+ft_strncpy.s: ft_strncpy.c.s
+.PHONY : ft_strncpy.s
 
 # target to generate assembly for a file
-strcpy.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/start.dir/build.make CMakeFiles/start.dir/strcpy.c.s
-.PHONY : strcpy.c.s
+ft_strncpy.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/start.dir/build.make CMakeFiles/start.dir/ft_strncpy.c.s
+.PHONY : ft_strncpy.c.s
+
+main.o: main.c.o
+.PHONY : main.o
+
+# target to build an object file
+main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/start.dir/build.make CMakeFiles/start.dir/main.c.o
+.PHONY : main.c.o
+
+main.i: main.c.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/start.dir/build.make CMakeFiles/start.dir/main.c.i
+.PHONY : main.c.i
+
+main.s: main.c.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/start.dir/build.make CMakeFiles/start.dir/main.c.s
+.PHONY : main.c.s
 
 # Help Target
 help:
@@ -162,9 +186,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... start"
-	@echo "... strcpy.o"
-	@echo "... strcpy.i"
-	@echo "... strcpy.s"
+	@echo "... ft_strncpy.o"
+	@echo "... ft_strncpy.i"
+	@echo "... ft_strncpy.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

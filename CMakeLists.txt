@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(stdlibImpl)
+project(string_h_implementation)
 
-add_executable(start strcpy.c)
+add_executable(start main.c ft_strncpy.c)
