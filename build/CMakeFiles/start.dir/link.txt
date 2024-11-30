@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/start.dir/strcpy.c.o -o start 
