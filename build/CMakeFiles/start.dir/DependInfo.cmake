@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/henzel/Documents/textDocs/C/string_h_implementation/ft_strncpy.c" "CMakeFiles/start.dir/ft_strncpy.c.o" "gcc" "CMakeFiles/start.dir/ft_strncpy.c.o.d"
   "/home/henzel/Documents/textDocs/C/string_h_implementation/main.c" "CMakeFiles/start.dir/main.c.o" "gcc" "CMakeFiles/start.dir/main.c.o.d"
   )
 

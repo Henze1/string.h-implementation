@@ -1,1 +1,1 @@
-/usr/bin/cc CMakeFiles/start.dir/main.c.o CMakeFiles/start.dir/ft_strncpy.c.o -o start 
+/usr/bin/cc CMakeFiles/start.dir/main.c.o -o start 

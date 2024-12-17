@@ -129,30 +129,6 @@ start/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/start.dir/build.make CMakeFiles/start.dir/build
 .PHONY : start/fast
 
-ft_strncpy.o: ft_strncpy.c.o
-.PHONY : ft_strncpy.o
-
-# target to build an object file
-ft_strncpy.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/start.dir/build.make CMakeFiles/start.dir/ft_strncpy.c.o
-.PHONY : ft_strncpy.c.o
-
-ft_strncpy.i: ft_strncpy.c.i
-.PHONY : ft_strncpy.i
-
-# target to preprocess a source file
-ft_strncpy.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/start.dir/build.make CMakeFiles/start.dir/ft_strncpy.c.i
-.PHONY : ft_strncpy.c.i
-
-ft_strncpy.s: ft_strncpy.c.s
-.PHONY : ft_strncpy.s
-
-# target to generate assembly for a file
-ft_strncpy.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/start.dir/build.make CMakeFiles/start.dir/ft_strncpy.c.s
-.PHONY : ft_strncpy.c.s
-
 main.o: main.c.o
 .PHONY : main.o
 
@@ -186,9 +162,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... start"
-	@echo "... ft_strncpy.o"
-	@echo "... ft_strncpy.i"
-	@echo "... ft_strncpy.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/start.dir/ft_strncpy.c.o"
-  "CMakeFiles/start.dir/ft_strncpy.c.o.d"
   "CMakeFiles/start.dir/main.c.o"
   "CMakeFiles/start.dir/main.c.o.d"
   "start"
