@@ -1,15 +1,27 @@
-int ft_str_is_numeric(char *str) {
-    char *buff;
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_str_is_numeric.c                                :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hpodratc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/12/04 11:06:45 by hpodratc          #+#    #+#             */
+/*   Updated: 2024/12/04 11:21:55 by hpodratc         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-    buff = str;
-    if (*buff == '\0') return (1);
-    while (*buff)
-    {
-        if (*buff < '0' || *buff > '9')
-            return (0);
+int	ft_str_is_numeric(char *str)
+{
+	char	*buff;
 
-        ++buff;
-    }
-
-    return (1);
+	buff = str;
+	if (*buff == '\0')
+		return (1);
+	while (*buff)
+	{
+		if (*buff < '0' || *buff > '9')
+			return (0);
+		++buff;
+	}
+	return (1);
 }

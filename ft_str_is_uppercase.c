@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_lowercase.c                              :+:      :+:    :+:   */
+/*   ft_str_is_uppeecase.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hpodratc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/04 11:06:54 by hpodratc          #+#    #+#             */
-/*   Updated: 2024/12/04 11:23:08 by hpodratc         ###   ########.fr       */
+/*   Created: 2024/12/04 11:07:03 by hpodratc          #+#    #+#             */
+/*   Updated: 2024/12/04 11:24:22 by hpodratc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_str_is_lowercase(char *str)
+int	ft_str_is_uppercase(char *str)
 {
 	char	*buff;
 
@@ -19,7 +19,7 @@ int	ft_str_is_lowercase(char *str)
 		return (1);
 	while (*buff)
 	{
-		if (*buff < 'a' || *buff > 'z')
+		if (*buff < 'A' || *buff > 'Z')
 			return (0);
 		++buff;
 	}

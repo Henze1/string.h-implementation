@@ -1,27 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_lowercase.c                              :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hpodratc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/04 11:06:54 by hpodratc          #+#    #+#             */
-/*   Updated: 2024/12/04 11:23:08 by hpodratc         ###   ########.fr       */
+/*   Created: 2024/12/17 10:35:28 by hpodratc          #+#    #+#             */
+/*   Updated: 2024/12/17 10:37:35 by hpodratc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_str_is_lowercase(char *str)
+int	ft_strlen(char *str)
 {
-	char	*buff;
+	int	len;
 
-	buff = str;
-	if (*buff == '\0')
-		return (1);
-	while (*buff)
+	len = 0;
+	while (str[len])
 	{
-		if (*buff < 'a' || *buff > 'z')
-			return (0);
-		++buff;
+		++len;
 	}
-	return (1);
+	return (len);
 }
+/*
+#include <stdio.h>
+int main(void)
+{
+    char    str[20] = "Hello";
+    printf("%d\n", ft_strlen(str));
+    return (0);
+}*/

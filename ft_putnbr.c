@@ -1,27 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_lowercase.c                              :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hpodratc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/04 11:06:54 by hpodratc          #+#    #+#             */
-/*   Updated: 2024/12/04 11:23:08 by hpodratc         ###   ########.fr       */
+/*   Created: 2024/12/17 10:38:50 by hpodratc          #+#    #+#             */
+/*   Updated: 2024/12/17 10:40:25 by hpodratc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_str_is_lowercase(char *str)
-{
-	char	*buff;
+#include <unistd.h>
 
-	buff = str;
-	if (*buff == '\0')
-		return (1);
-	while (*buff)
+void	ft_putnbr(int nb)
+{
+	int		num;
+	int		rev;
+	char	c;
+
+	num = nb;
+	rev = 0;
+	while (num)
 	{
-		if (*buff < 'a' || *buff > 'z')
-			return (0);
-		++buff;
+		rev *= 10;
+		rev += num % 10;
+		num /= 10;
 	}
-	return (1);
+	while (rev)
+	{
+		c = (rev % 10) + '0';
+		write(1, &c, 1);
+		rev /= 10;
+	}
 }
+/*
+#include <stdio.h>
+int main(void)
+{
+    int a;
+    printf("Enter a number: ");
+    scanf("%d", &a);
+    ft_putnbr(a);
+    return (0);
+}*/

@@ -1,15 +1,25 @@
-char *ft_strupcase(char *str)
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strupcase.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hpodratc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/12/04 11:07:32 by hpodratc          #+#    #+#             */
+/*   Updated: 2024/12/04 11:26:36 by hpodratc         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+char	*ft_strupcase(char *str)
 {
-    char *buff;
+	char	*buff;
 
-    buff = str;
-    while (*buff)
-    {
-        if (*buff >= 'a' && *buff <= 'z')
-            *buff -= 32;
-
-        ++buff;
-    }
-
-    return str;
+	buff = str;
+	while (*buff)
+	{
+		if (*buff >= 'a' && *buff <= 'z')
+			*buff -= 32;
+		++buff;
+	}
+	return (str);
 }
