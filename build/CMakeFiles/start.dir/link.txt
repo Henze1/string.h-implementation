@@ -1,1 +1,0 @@
-/usr/bin/cc CMakeFiles/start.dir/main.c.o -o start 
