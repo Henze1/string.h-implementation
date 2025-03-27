@@ -1,0 +1,7 @@
+strcspn
+
+strpbrk
+
+strspn
+
+strtok
